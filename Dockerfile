@@ -103,7 +103,7 @@ RUN \
 
 # Generate and install favicons.
 RUN \
-    APP_ICON_URL=https://github.com/jlesage/docker-templates/raw/master/jlesage/images/firefox-icon.png && \
+    APP_ICON_URL=https://github.com/FedorovD/docker-templates/raw/master/jlesage/images/firefox-icon.png && \
     install_app_icon.sh "$APP_ICON_URL"
 
 # Add files.
@@ -113,12 +113,12 @@ COPY rootfs/ /
 ENV APP_NAME="Firefox"
 
 # Define mountable directories.
-VOLUME ["/config"]
+#VOLUME ["/config"]
 
 # Metadata.
 LABEL \
       org.label-schema.name="firefox" \
       org.label-schema.description="Docker container for Firefox" \
       org.label-schema.version="unknown" \
-      org.label-schema.vcs-url="https://github.com/jlesage/docker-firefox" \
+      org.label-schema.vcs-url="https://FedorovD.com/jlesage/docker-firefox" \
       org.label-schema.schema-version="1.0"
