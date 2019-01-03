@@ -11,4 +11,4 @@ services:
 
 script:
   - echo "Starting build of Docker image..."
-  - docker build --no-cache --pull -t $TRAVIS_REPO_SLUG:$TRAVIS_JOB_ID .
+  - docker build --no-cache --pull -t fedorovd/docker-firefox:$TRAVIS_JOB_ID .
